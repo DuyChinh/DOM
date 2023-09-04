@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    /* hidden scroll */
+}
+
+.carousel .carousel-inner {
+    transition: translate 0.4s ease;
+    display: flex;
+    /* width: 2982px; */
+}
+
+.carousel .carousel-inner .item {
+    /* width: 994px; */
+}
+
+/* .carousel .carousel-inner .item:not(.active) {
+    display: none;
+} */
+
+.carousel .carousel-nav span {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: gray;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.carousel .carousel-nav span.prev {
+    left: 5px;
+}
+
+.carousel .carousel-nav span.next {
+    right: 5px;
+}
+
+.carousel .carousel-mark {
+    background: green;
+    width: 200px;
+    height: 12px;
+}
+
+.carousel .carousel-mark .dot {
+    width: 8px;
+    height: 8px;
+    background: red;
+}

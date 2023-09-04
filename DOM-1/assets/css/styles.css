@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.modal-box {
+    transition: all 0.5s ease;
+    visibility: hidden;
+}
+
+.modal-box.show {
+    visibility: visible;
+}
+
+.modal-box .modal {
+    transform: translate(100%);
+}
+
+.modal-box.show .modal {
+    transform: translate(0);
+}
+
+.modal {
+    width: 1000px;
+    margin: 0px auto;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 30px;
+    z-index: 1;
+}
+
+.heading,
+.modal-footer {
+    background: red;
+    padding: 20px;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.desc {
+    font-size: 2rem;
+    margin: 50px 20px;
+}
+
+.modal-footer {
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: #ccc;
+    opacity: 0.8;
+}
+
+#modal-action:checked ~ .modal-box {
+    display: block;
+}
