@@ -133,6 +133,6 @@ progressSpan.addEventListener("mouseover", function (e) {
 audio.addEventListener("ended", function () {
     value = 0;
     audio.currentTime = 0;
-    // handleUpdateValue(0);
+    handleUpdateValue(0);
     playBtn.innerHTML = playBtnIcon;
 });
