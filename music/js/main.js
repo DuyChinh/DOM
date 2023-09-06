@@ -92,7 +92,7 @@ playBtn.addEventListener("click", function () {
 audio.addEventListener("timeupdate", function () {
     currentTimeEl.innerText = getTime(audio.currentTime);
     //Lấy ra tỉ lệ % dựa vào currentTime, duration
-    var value = (audio.currentTime * 100) / audio.duration;
+    value = (audio.currentTime * 100) / audio.duration;
     handleUpdateValue(value);
 });
 
