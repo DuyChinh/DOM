@@ -136,3 +136,5 @@ audio.addEventListener("ended", function () {
     handleUpdateValue(0);
     playBtn.innerHTML = playBtnIcon;
 });
+
+
