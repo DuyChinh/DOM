@@ -1,0 +1,15 @@
+{
+    "list":[
+        {
+            "id": 1,
+            "name": "Duy Chinh",
+            "email": "doanchinhit21@gmail.com"
+        },
+    
+        {
+            "id": 2,
+            "name": "Duy Chinh2",
+            "email": "doanchinhit21@gmail.com"
+        }
+    ]
+}
