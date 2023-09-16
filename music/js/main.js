@@ -155,13 +155,19 @@ btnKaraoke = document.querySelector(".btn-karaoke");
 karaoke = document.querySelector(".karaoke");
 exit = document.querySelector(".exit");
 karaokeInner = document.querySelector(".karaoke-inner");
+var song = `
+    <p>Hoa cỏ lau</p>
+    <p>Ca sĩ: Hoàng An</p>
+`
 
 btnKaraoke.addEventListener("click", function() {
-    karaoke.style.display ="block";
+    karaoke.style.translate = "0 0";
+    karaokeInner.innerHTML = song;
 });
 
 exit.addEventListener("click", function() {
-    karaoke.style.display = "none";
+    karaoke.style.translate = "0 100%";
+    karaokeInner.innerHTML = "";
 });
 
 var arrLyric = [];
@@ -169,12 +175,9 @@ lyric.forEach(function(item) {
     arrLyric.push(item.words);
 });
 
-var song = `
-    <p>Hoa cỏ lau</p>
-    <p>Ca sĩ: Hoàng An</p>
-`
 
-console.log(arrLyric);
+
+// console.log(arrLyric);
 var lineOnePage = 2;
 var showLyric = function(time) {
     var index = arrLyric.findIndex(function(item) {
@@ -192,10 +195,11 @@ var showLyric = function(time) {
             var lyricEl = document.createElement("p");
             arrLyric[i].forEach(function(item) {
                 lyricEl.innerText += item.data + " ";
+                console.log(item.data);
             });
             content.appendChild(lyricEl);
         }
         karaokeInner.append(content);
-        console.log(karaokeInner.innerText);
+        // console.log(karaokeInner.innerText);
     }
 }
