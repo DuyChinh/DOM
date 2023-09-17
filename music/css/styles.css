@@ -27,6 +27,8 @@ select {
     margin: 0 auto;
 }
 
+
+
 .player {
     display: flex;
     align-items: center;
@@ -94,16 +96,18 @@ select {
     translate: 50% -50%;
 }
 
-.show-lyric {
+/* .show-lyric {
     margin-top: 60px;
     display: flex;
     justify-content: center;
     font-size: 3rem;
     font-weight: 600;
-}
+} */
 
-.btn-karaoke {
-    margin-left: auto;
+
+.karaoke .play {
+    display: block;
+    margin: 0 auto;
     padding: 12px 20px;
     border-radius: 999px;
     cursor: pointer;
@@ -112,25 +116,104 @@ select {
     font-size: 1.8rem;
 }
 
-.karaoke .heading {
-    font-size: 5rem;
-    font-weight: 600;
-}
 
-.exit {
+.close {
     display: inline-block;
     font-size: 3rem;
     margin-left: auto;
     cursor: pointer;
 }
 
-.header-karaoke {
+.karaoke .karaoke-inner {
+    background: #8a2be2;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    top: 100%;
+    transition: top 0.4s ease;
+}
+
+.karaoke.show .karaoke-inner {
+    top: 0;
+}
+
+.karaoke .karaoke-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 0;
 }
 
-.karaoke-inner {
+.karaoke h2 {
+    font-size: 4.5rem;
+}
+
+.karaoke .karaoke-content {
+    font-size: 3.3rem;
+    line-height: 1.5;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.karaoke .karaoke-content p {
+    margin-top: 10px 0;
+    position: relative;
+    white-space: nowrap;
+}
+
+
+.karaoke .karaoke-content p span {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    overflow: hidden;
+    color: yellow;
+    text-align: left;
+}
+
+.player-wrap.bottom {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    color: #fff;
+}
+
+.player-wrap.bottom .progress-bar {
+    background: #333;
+}
+
+.player-wrap.bottom .progress-bar .progress span {
+    background: #fff;
+}
+
+p.blur {
+    display: block;
+    background: #8a2be2;
+    opacity: 0.8;
+}
+
+
+
+/* .header-karaoke {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+/* .karaoke-inner {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -140,9 +223,9 @@ select {
     font-weight: 600;
     line-height: 2;
     margin: 30px auto;
-}
+} */
 
-.karaoke {
+/* .karaoke {
     transition: translate 0.5s ease;
     translate: 0 100%;
     color: #fff;
@@ -150,7 +233,7 @@ select {
     position: fixed;
     inset: 0;
     background: #8a2be2;
-}
+} */
 
 
 

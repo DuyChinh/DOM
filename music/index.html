@@ -17,45 +17,67 @@
     </head>
     <body>
         <main class="main">
-            <div class="container">
-                <div class="play-btn">
-                    <i class="fa-solid fa-play"></i>
-                </div>
-                <div class="player">
-                    <span>00:00</span>
-                    <div class="progress-bar">
-                        <span class="current-runTime"></span>
-                        <div class="progress">
-                            <span></span>
+            <div class="sing-1">
+                <div class="player-wrap">
+                    <div class="container">
+                        <div class="play-btn">
+                            <i class="fa-solid fa-play"></i>
                         </div>
-                    </div>
-                    <span>00:00</span>
-                </div>
-                <audio
-                    class="audio"
-                    src="./mp3/NoName.mp3"
-                ></audio>
-            </div>
-            <div style="margin-top: 30px;text-align: center;">
-                <button class="btn-karaoke">Sing Karaoke</button>
-            </div>
-            <!-- Karaoke -->
-            <div class="karaoke">
-                <div class="container">
-                    <div class="header-karaoke">
-                        <h1 class="heading">Karaoke</h1>
-                        <div class="exit">
-                            <i class="fa-angle-down fa-solid"></i>
+                        <div class="player">
+                            <span>00:00</span>
+                            <div class="progress-bar">
+                                <span class="current-runTime"></span>
+                                <div class="progress">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <span>00:00</span>
                         </div>
+                        <audio
+                            class="audio"
+                            src="./mp3/NoName.mp3"
+                        ></audio>
                     </div>
+                </div>
+                <!-- <div style="margin-top: 30px;text-align: center;">
+                    <button class="btn-karaoke">Sing Karaoke</button>
+                </div> -->
+                <!-- Karaoke -->
+                <div class="karaoke">
+                    <button class="play" style="margin-top: 30px;">
+                        Hát karaoke
+                    </button>
                     <div class="karaoke-inner">
-                        
+                        <div class="container">
+                            <div class="karaoke-heading">
+                                <h2>Karaoke</h2>
+                                <span class="close">
+                                    <i class="fa-angle-down fa-solid"></i>
+                                </span>
+                            </div>
+                            <div class="karaoke-content">
+                                <p>Hoa cỏ lau</p>
+                                <p>Ca sĩ: Hoàng An </p>
+                            </div>
+                        </div>
                     </div>
+                    <!-- <div class="container">
+                        <div class="header-karaoke">
+                            <h1 class="heading">Karaoke</h1>
+                            <div class="exit">
+                                <i class="fa-angle-down fa-solid"></i>
+                            </div>
+                        </div>
+                        <div class="karaoke-inner">
+                            
+                        </div>
+                    </div> -->
                 </div>
             </div>
+            
         </main>
         
-        
+        <script src="./js/lyric.js"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>
