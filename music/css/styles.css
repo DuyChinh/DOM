@@ -4,6 +4,7 @@ html {
 
 * {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -163,7 +164,7 @@ select {
 }
 
 .karaoke .karaoke-content p {
-    margin-top: 10px 0;
+    margin: 10px auto;
     position: relative;
     white-space: nowrap;
 }
@@ -236,4 +237,14 @@ p.blur {
 } */
 
 
-
+@media screen and (max-width: 400px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    
+    .karaoke .karaoke-content {
+        font-size: 2rem;
+    }
+}
