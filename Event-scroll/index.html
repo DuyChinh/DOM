@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Scroll</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+        .top {
+            background: red;
+            padding: 20px 10px;
+            color: #fff;
+            border: 0;
+            position: fixed;
+            right: 10px;
+            bottom: 15px;
+            cursor: pointer;
+            user-select: none;
+            display: none;
+        }
+        html {
+            scroll-behavior: smooth;
+            
+        }
+        .top.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Scroll</h1>
+    <button class="top">
+        Top
+    </button>
+    <script src="./js/main.js"></script>
+</body>
+</html>

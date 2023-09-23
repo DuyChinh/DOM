@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll-2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            height: 2000px;
+        }
+        .header {
+            padding: 10px 0;
+        }
+
+        .header nav {
+            z-index: 1;
+            height: 30px;
+            line-height: 30px;
+            background: green;
+            color: #fff;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            padding: 5px 0;
+        }
+
+        nav.fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        section {
+            min-height: 100vh;
+        }
+        .header nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>HEADER</h1>
+        <nav>
+            <a href="#hero">Về F8</a>
+            <a href="#register">Đăng ký khóa học</a>
+        </nav>
+        <h2 style="font-size: 50px;">Hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad libero dolores quidem ex reiciendis eaque praesentium inventore possimus officia, ab sequi, eos repellendus nulla saepe rem perferendis nobis molestiae error! Nihil vero praesentium, harum rem accusantium, ipsum esse sed, at quis minus velit tenetur voluptatum! Quo incidunt dolorem non fugiat.</p>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>F8-Fullstack</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Ea dolore perspiciatis cum. Odit exercitationem porro, 
+            sequi ea consectetur tenetur ex!
+        </p>
+        </section>
+
+        <section id="register">
+            <h2>Đăng ký khóa học</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Aliquid, rerum sit. Minus libero laborum, natus possimus delectus 
+                quod dolorum iusto suscipit rem, tenetur nesciunt, nam cum illum 
+                sit? Eius, accusamus.
+            </p>
+        </section>
+    </main>
+   
+    <script src="./js/exe2.js"></script>
+</body>
+</html>

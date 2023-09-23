@@ -3,3 +3,4 @@ var lyric = `{"err":0,"msg":"Success","data":{"sentences":[{"words":[{"startTime
 lyric = JSON.parse(lyric).data.sentences;
 
 // console.log(lyric);
+
